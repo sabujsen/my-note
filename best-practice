@@ -12,7 +12,9 @@ Iterating through each answer is slow. Instead, Use Task.WhenAll to execute all 
 
 
 
-
+Java Script
 ----------------
 ||"0" - Js
 Function have no parameter
+Use self execute func
+no grobal varible
