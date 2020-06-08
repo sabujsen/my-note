@@ -1,0 +1,18 @@
+# Best Practice
+No Magic word -- use enum
+No early varible declare before use
+No long Dto Class use Group into small
+Single func used for single perpose
+Use map instead of loop - JS
+Use linq instead of loop if possible
+Proper caseing
+Use switch insted of if else
+Use "Any(),"  to check null
+Iterating through each answer is slow. Instead, Use Task.WhenAll to execute all write operations in parallel.
+
+
+
+
+----------------
+||"0" - Js
+Function have no parameter
