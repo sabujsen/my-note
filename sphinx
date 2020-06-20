@@ -4,6 +4,7 @@
 https://sphinx-themes.org/
 https://gist.github.com/johncrossland/9f6f54d559e9136773172aa0a429b46f
 https://pandoc.org/installing.html
+https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html#line-blocks
 
 #Uses
 >pip install -U Sphinx
