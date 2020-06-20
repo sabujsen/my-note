@@ -1,0 +1,22 @@
+# sphinx python documents generator
+
+
+https://sphinx-themes.org/
+>pip install -U Sphinx
+>sphinx-quickstart
+>make html
+>pip install sphinx-rtd-theme
+>pip install sphinx_bootstrap_theme
+
+make singlehtml
+make latexpdf
+
+pip install rst2pdf
+
+extensions = ['rst2pdf.pdfbuilder']
+pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
+
+sphinx-build -b pdf source build
+
+cd _build/singlehtml/
+pandoc -o index.docx index.html	
