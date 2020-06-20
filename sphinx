@@ -1,7 +1,11 @@
 # sphinx python documents generator
 
-
+# Links
 https://sphinx-themes.org/
+https://gist.github.com/johncrossland/9f6f54d559e9136773172aa0a429b46f
+https://pandoc.org/installing.html
+
+#Uses
 >pip install -U Sphinx
 >sphinx-quickstart
 >make html
@@ -18,5 +22,6 @@ pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
 
 sphinx-build -b pdf source build
 
-cd _build/singlehtml/
+pip install pandoc
+cd build/singlehtml/
 pandoc -o index.docx index.html	
