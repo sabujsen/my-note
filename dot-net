@@ -1,0 +1,25 @@
+# Switch Case
+-------------
+
+public static decimal CalculateToll(object vehicle) =>
+    vehicle switch
+    {
+       ...
+       
+        DeliveryTruck t when t.GrossWeightClass > 5000 => 10.00m + 5.00m,
+        DeliveryTruck t when t.GrossWeightClass < 3000 => 10.00m - 2.00m,
+        DeliveryTruck _ => 10.00m,
+
+        _ => throw new ArgumentException("Not a known vehicle type", nameof(vehicle))
+    };
+    
+    # Null Exception Handling
+    throw new ArgumentNullException(nameof(value));
+    
+    # Get Integers form List
+     public static IEnumerable<int> GetIntegersFromList(List<object> listOfItems)
+   {
+    
+       return listOfItems.OfType<int>(); 
+      
+   }
