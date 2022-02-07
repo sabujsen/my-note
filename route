@@ -1,0 +1,22 @@
+import { Router } from 'express';
+import Route from '@interfaces/routes.interface';
+import FooterController from '@controllers/FooterController';
+import { autoInjectable } from 'tsyringe';
+
+@autoInjectable()
+class FooterRoute implements Route {
+    public footerPath = '/api/footer/list';
+
+    public router = Router();
+    public footerController: FooterController;
+    constructor(footerController: FooterController) {
+        this.footerController = footerController;
+        this.initializeRoutes();
+    }
+
+    private initializeRoutes() {
+        this.router.get(`${this.footerPath}`, this.footerController.footerList);
+    }
+}
+
+export default FooterRoute;
